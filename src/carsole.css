@@ -1,0 +1,41 @@
+.carosole {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+}
+img {
+  width: 100%;
+}
+.mobilecarsole {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin-top: 3%;
+}
+.imgmobile{
+    display: block;
+}
+@media only screen and (max-width: 720px) {
+  .carosole {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .mobilecarsole {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+  }
+  .imgmobile{
+    display: "none";
+  }
+}
